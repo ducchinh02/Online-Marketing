@@ -458,6 +458,11 @@
 .feedback .container .row .feedback-details .feedback-analytics span:last-child {
   color: #949CB7;
 }
+@media (max-width: 768px) {
+  .feedback {
+    padding: 5rem 0 0;
+  }
+}
 
 .blog {
   padding: 5rem 0;
@@ -536,6 +541,11 @@
   .subscribes .container .row .form-group button {
     position: relative;
     width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .subscribes {
+    margin: 0 0 5rem;
   }
 }
 

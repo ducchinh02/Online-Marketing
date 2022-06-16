@@ -45,3 +45,21 @@ closeBtn.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
     closeMenu()
 })
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '40px',
+    duration: 1500
+})
+
+
+sr.reveal(`.header-main`)
+sr.reveal(`.brand`, { delay: 500 })
+sr.reveal(`.services`, { delay: 600 })
+sr.reveal(`.top-marketing`, { delay: 700 })
+sr.reveal(`.goal`, { interval: 100, delay: 700 })
+sr.reveal(`.feedback`, { delay: 800 })
+sr.reveal(`.blog`, { delay: 900 })
+sr.reveal(`.subscribes`, { delay: 1000 })
+sr.reveal(`.footer`, { delay: 1100 })
