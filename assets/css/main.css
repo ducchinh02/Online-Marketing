@@ -1,0 +1,113 @@
+.btn-main {
+  padding: 1.3rem 2.9rem;
+  border-radius: 4rem;
+  text-align: center;
+  display: inline-block;
+}
+
+::selection {
+  background-color: #FF7D01;
+  color: #fff;
+}
+
+.header .navigation {
+  position: fixed;
+  top: 0;
+  padding: 3rem 0;
+  left: 0;
+  display: inline-flex;
+  z-index: 99999;
+  background-color: #fff;
+}
+.header .navigation .container .menu {
+  gap: 0 3.8rem;
+}
+.header .navigation .container .menu-item {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header .navigation .container .menu-item:hover a, .header .navigation .container .menu-item.active a {
+  color: #FF7D01;
+}
+.header .navigation .container .menu-item:hover::before, .header .navigation .container .menu-item.active::before {
+  width: 100%;
+}
+.header .navigation .container .menu-item::before {
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 0;
+  height: 0.3rem;
+  background-color: #FF7D01;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+.header .navigation .container .menu-item:hover::before {
+  width: 100%;
+}
+.header .navigation .container .menu-item a {
+  color: #635F85;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header .navigation .container .actions a + a {
+  margin-left: 1.5rem;
+}
+.header .navigation .container .actions .login {
+  border: 0.2rem solid #E7E7E7;
+  color: #FF7D01;
+}
+.header .navigation .container .actions .sign-up {
+  color: #fff;
+  background: linear-gradient(103.38deg, #f67102 5.1%, #f4a91e 86.29%);
+}
+.header .navigation.active {
+  padding: 2rem 0;
+}
+.header .header-main {
+  padding: 10rem 0;
+}
+.header .header-main .container .row .col-lg-5 .caption {
+  letter-spacing: 0.185em;
+  color: #FF7D01;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.header .header-main .container .row .col-lg-5 .heading-content {
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 5.6rem;
+  color: #051441;
+}
+.header .header-main .container .row .col-lg-5 .subtitle {
+  color: #5D677E;
+  margin-bottom: 5rem;
+}
+.header .header-main .container .row .col-lg-5 .actions-content {
+  gap: 3.6rem;
+}
+.header .header-main .container .row .col-lg-5 .actions-content .get-started {
+  color: #fff;
+  background: linear-gradient(103.38deg, #f67102 5.1%, #f4a91e 86.29%);
+}
+.header .header-main .container .row .col-lg-5 .actions-content .watch {
+  gap: 0 3.6rem;
+}
+.header .header-main .container .row .col-lg-5 .actions-content .watch .icon-play {
+  padding: 2rem;
+  border-radius: 50%;
+  box-shadow: 0 1.7rem 2.5rem rgba(140, 141, 146, 0.12);
+}
+.header .header-main .container .row .col-lg-5 .actions-content .watch .watch-video {
+  color: #051441;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+// colors
+$black: #5D677E;
+$white: #fff;
+$primary: #FF7D01;
+$blue: #049EFF;
+$color-1: #F4F7FF;
+$color-2: #5A73E5;
+$color-3: #AFACCD;
+$color-4: #D9E1F0;
+$color-menu: #635F85;
+$footer: #052347;
+$background-primary: linear-gradient(103.38deg, #f67102 5.1%, #f4a91e 86.29%);
+$background-2: #F4F6FD;
+$border: #E7E7E7;
+$bold: #051441;
+// global components 
+.btn-main {
+    padding: 1.3rem 2.9rem;
+    border-radius: 4rem;
+    text-align: center;
+    display: inline-block;
+}
+
+::selection {
+    background-color: $primary;
+    color: $white;
+}

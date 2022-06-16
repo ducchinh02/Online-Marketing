@@ -1,0 +1,117 @@
+.header {
+    // nav
+    .navigation {
+        position: fixed;
+        top: 0;
+        padding: 3rem 0;
+        left: 0;
+        display: inline-flex;
+        z-index: 99999;
+        background-color: #fff;
+        .container {
+            // menu
+            .menu {
+                gap: 0 3.8rem;
+                &-item {
+                    transition: all .3s ease;
+                    -webkit-transition: all .3s ease;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    &:hover,
+                    &.active {
+                        a {
+                            color: $primary;
+                        }
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 80%;
+                        left: 0;
+                        width: 0;
+                        height: 0.3rem;
+                        background-color: $primary;
+                        transition: all .3s ease;
+                        -webkit-transition: all .3s ease;
+                    }
+                    &:hover::before {
+                        width: 100%;
+                    }
+                    a {
+                        color: $color-menu;
+                        transition: all .3s ease;
+                        -webkit-transition: all .3s ease;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+            // button actions
+            .actions {
+                a+a {
+                    margin-left: 1.5rem;
+                }
+                .login {
+                    border: 0.2rem solid $border;
+                    color: $primary;
+                }
+                .sign-up {
+                    color: $white;
+                    background: $background-primary;
+                }
+            }
+        }
+        &.active {
+            padding: 2rem 0;
+        }
+    }
+    // header content
+    .header-main {
+        padding: 10rem 0;
+        .container {
+            .row {
+                // text content
+                .col-lg-5 {
+                    .caption {
+                        letter-spacing: 0.185em;
+                        color: $primary;
+                        font-size: 1.3rem;
+                        font-weight: 500;
+                    }
+                    .heading-content {
+                        @include text-header-main;
+                        color: $bold;
+                    }
+                    .subtitle {
+                        color: $black;
+                        margin-bottom: 5rem;
+                    }
+                    .actions-content {
+                        gap: 3.6rem;
+                        .get-started {
+                            color: $white;
+                            background: $background-primary;
+                        }
+                        .watch {
+                            gap: 0 3.6rem;
+                            .icon-play {
+                                padding: 2rem;
+                                border-radius: 50%;
+                                box-shadow: 0 1.7rem 2.5rem rgba(140, 141, 146, 0.12);
+                            }
+                            .watch-video {
+                                color: $bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

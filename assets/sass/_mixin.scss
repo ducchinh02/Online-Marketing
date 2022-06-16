@@ -1,0 +1,21 @@
+@mixin text-header-bold {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5rem;
+}
+
+@mixin text-header-main {
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 5.6rem;
+}
+
+@mixin text-header-components {
+    font-weight: 600;
+    font-size: 2.1rem;
+    line-height: 3.2rem;
+}
+
+@mixin text-bold {
+    font-weight: 600;
+}
