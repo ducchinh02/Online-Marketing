@@ -44,3 +44,18 @@ ul {
 .text-upper {
     text-transform: uppercase;
 }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1.4rem;
+    }
+    .btn-main {
+        padding: 1.2rem 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 3rem;
+    }
+}

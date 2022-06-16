@@ -66,9 +66,17 @@
                     background: $background-primary;
                 }
             }
+            .menu-bar {
+                font-size: 3rem;
+                cursor: pointer;
+                &:hover {
+                    color: $primary;
+                }
+            }
         }
         &.active {
             padding: 2rem 0;
+            box-shadow: 0 2.4rem 10rem rgb(94 122 148 / 10%);
         }
     }
     // header content
@@ -78,18 +86,17 @@
             .row {
                 // text content
                 .col-lg-5 {
-                    .caption {
-                        letter-spacing: 0.185em;
-                        color: $primary;
-                        font-size: 1.3rem;
-                        font-weight: 500;
-                    }
                     .heading-content {
                         @include text-header-main;
                         color: $bold;
+                        @media (max-width: 576px) {
+                            & {
+                                font-size: 3.5rem;
+                                line-height: 1;
+                            }
+                        }
                     }
                     .subtitle {
-                        color: $black;
                         margin-bottom: 5rem;
                     }
                     .actions-content {

@@ -13,15 +13,5 @@ $background-primary: linear-gradient(103.38deg, #f67102 5.1%, #f4a91e 86.29%);
 $background-2: #F4F6FD;
 $border: #E7E7E7;
 $bold: #051441;
-// global components 
-.btn-main {
-    padding: 1.3rem 2.9rem;
-    border-radius: 4rem;
-    text-align: center;
-    display: inline-block;
-}
-
-::selection {
-    background-color: $primary;
-    color: $white;
-}
+$card-color1: #949CB7;
+$card-color2: #79899D;

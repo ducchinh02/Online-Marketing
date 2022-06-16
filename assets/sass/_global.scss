@@ -1,0 +1,156 @@
+// global components 
+.btn-main {
+    padding: 1.3rem 2.9rem;
+    border-radius: 4rem;
+    text-align: center;
+    display: inline-block;
+}
+
+::selection {
+    background-color: $primary;
+    color: $white;
+}
+
+.caption {
+    letter-spacing: 0.185em;
+    color: $primary;
+    font-size: 1.3rem;
+    @include text-bold;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    color: $black;
+}
+
+.heading-text-bold {
+    @include text-header-bold;
+    padding: 2.5rem 0;
+    max-width: 47rem;
+    width: 100%;
+    margin: 0 auto;
+    color: $bold;
+    @media (max-width: 576px) {
+        & {
+            font-size: 3rem;
+            line-height: 1;
+        }
+    }
+}
+
+.card-heading {
+    @include text-header-components;
+    color: $bold;
+}
+
+.btn-bgr {
+    background: $background-primary;
+    color: $white;
+    margin-top: 2.5rem;
+    &:hover {
+        color: $white;
+    }
+}
+
+// overlay
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999998;
+    &.active {
+        display: block;
+    }
+}
+
+// menu mobile
+.menu-mobile {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: $white;
+    z-index: 99999999;
+    width: 70%;
+    padding: 12rem 3rem 2rem;
+    gap: 3rem 0;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    pointer-events: none;
+    opacity: 0;
+    .close {
+        position: absolute;
+        top: 5rem;
+        right: 3rem;
+        font-size: 3.5rem;
+        cursor: pointer;
+        &:hover {
+            color: $primary;
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    .menu {
+        gap: 3rem 0;
+        &-item {
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+            text-align: center;
+            &:hover,
+            &.active {
+                a {
+                    color: $primary;
+                }
+            }
+            a {
+                color: $color-menu;
+                transition: all .3s ease;
+                -webkit-transition: all .3s ease;
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+    .actions {
+        gap: 2rem 0;
+        .login {
+            border: 0.2rem solid $border;
+            color: $primary;
+        }
+        .sign-up {
+            color: $white;
+            background: $background-primary;
+        }
+    }
+    &.active {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        pointer-events: all;
+        opacity: 1;
+    }
+}
+
+// back to top
+.back-to-top {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 2.4rem;
+    background-color: $white;
+    cursor: pointer;
+    opacity: 0;
+    box-shadow: 0 2.4rem 6rem rgb(94 122 148 / 80%);
+    &:hover {
+        .icon-arrow {
+            margin-top: -0.5rem;
+            color: $primary;
+        }
+    }
+    &.active {
+        opacity: 1;
+    }
+}

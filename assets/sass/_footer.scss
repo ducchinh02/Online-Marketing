@@ -1,0 +1,47 @@
+.footer {
+    background-color: $footer;
+    .container {
+        padding: 9rem 0 4rem;
+        border-bottom: 0.1rem solid $black;
+        .row {
+            gap: 3rem 0;
+            .footer-heading {
+                color: $color-4;
+                @include text-bold;
+                font-size: 1.8rem;
+            }
+            .footer-menu {
+                padding: 2rem 0;
+                gap: 1.5rem 0;
+                .menu-item {
+                    color: $color-3;
+                    font-size: 1.4rem;
+                    transition: all .3s ease;
+                    -webkit-transition: all .3s ease;
+                    a {
+                        color: $color-3;
+                        transition: all .3s ease;
+                        -webkit-transition: all .3s ease;
+                    }
+                    &:hover {
+                        a {
+                            color: $color-1;
+                        }
+                    }
+                }
+            }
+            .social-link {
+                gap: 0 1rem;
+            }
+        }
+        @media (max-width:768px) {
+            & {
+                padding: 9rem 3rem;
+            }
+        }
+    }
+    .copyright {
+        color: $color-3;
+        padding: 3rem 0;
+    }
+}
