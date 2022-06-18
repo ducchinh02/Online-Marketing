@@ -79,6 +79,10 @@
     -webkit-transform: translateX(100%);
     pointer-events: none;
     opacity: 0;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
     .close {
         position: absolute;
         top: 5rem;

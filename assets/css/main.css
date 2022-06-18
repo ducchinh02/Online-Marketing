@@ -233,6 +233,10 @@
   -webkit-transform: translateX(100%);
   pointer-events: none;
   opacity: 0;
+  overflow: auto;
+}
+.menu-mobile::-webkit-scrollbar {
+  width: 0;
 }
 .menu-mobile .close {
   position: absolute;
