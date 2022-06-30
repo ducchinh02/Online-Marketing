@@ -46,16 +46,24 @@ overlay.addEventListener('click', () => {
 const sr = ScrollReveal({
     origin: 'top',
     distance: '40px',
-    duration: 1500
+    duration: 1000
 });
 
 
 sr.reveal(`.header-main`);
-sr.reveal(`.brand`, { delay: 500 });
-sr.reveal(`.services`, { delay: 500 });
-sr.reveal(`.top-marketing`, { delay: 500 });
-sr.reveal(`.goal`, { delay: 500 });
-sr.reveal(`.feedback`, { delay: 500 });
-sr.reveal(`.blog`, { delay: 500 });
-sr.reveal(`.subscribes`, { delay: 500 });
-sr.reveal(`.footer`, { delay: 500 });
+sr.reveal(`.brand`, {
+    delay: 100,
+    origin: 'right',
+    distance: '40px',
+});
+sr.reveal(`.services`, {
+    delay: 100,
+    origin: 'left',
+    distance: '40px',
+});
+sr.reveal(`.top-marketing`, { delay: 100 });
+sr.reveal(`.goal`, { delay: 100 });
+sr.reveal(`.feedback`, { delay: 100 });
+sr.reveal(`.blog`, { delay: 100 });
+sr.reveal(`.subscribes`, { delay: 100 });
+sr.reveal(`.footer`, { delay: 100 });
