@@ -51,16 +51,8 @@ const sr = ScrollReveal({
 
 
 sr.reveal(`.header-main`);
-sr.reveal(`.brand`, {
-    delay: 100,
-    origin: 'right',
-    distance: '40px',
-});
-sr.reveal(`.services`, {
-    delay: 100,
-    origin: 'left',
-    distance: '40px',
-});
+sr.reveal(`.brand`, {delay: 100,});
+sr.reveal(`.services`, {delay: 100,});
 sr.reveal(`.top-marketing`, { delay: 100 });
 sr.reveal(`.goal`, { delay: 100 });
 sr.reveal(`.feedback`, { delay: 100 });
